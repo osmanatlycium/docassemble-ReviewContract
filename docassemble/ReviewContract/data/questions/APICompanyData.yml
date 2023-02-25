@@ -1,0 +1,56 @@
+---
+
+question: |
+  Data Coming from API Company 
+fields:
+  - Co Name: company_name
+  - CoAdd1: employer_address01
+  - CoAdd2: employer_address02
+  - CoAdd3: employer_address03
+  - CoAdd4: employer_postcode
+  - CoEnt: company_entity
+  - WhereReg: where_registered
+  - CoRegNo: Company_Registration_Number
+  - StaffHabFrom: staffHandBookFrom
+  - CollectAgree: collectiveAgreement
+  - OpeCCTV: operateCCTVOnPrem
+  - WTReg: WorkingTimeRegs
+  - SIckPayPol: IsThereSickPayPolicy
+  - DoPaySSP: PaySSP
+  - DoContractualSickPay: ContractualSickPay
+  - PeriodOfServiceToGetCSP: PeriodOfServiceToGetCSP
+  - FullPayForSickHowManyDays: FullPayForSickHowManyDays
+  - HalfPayForSickHowManyFullDay: HalfPayForSickHowManyFullDays
+  - HowLongAfterReturnToWorkForCSP: HowLongAfterReturnToWorkForCSP
+  - NotifyAbsenceNoLaterThan: NotifyAbsenceNoLaterThan
+  - WhoToNotifyOfSickAbsence: WhoToNotifyOfSickAbsence
+  - PersonToReportWrongsTo: PersonToReportWrongsTo
+  - isThereSMP: isThereSMP
+  - isThereSPP: isThereSPP
+  - employerHolYearStart: employerHolYearStart 
+  - incBankHols: incBankHols
+  - How_Paid: How_Paid
+  - When_Paid: When_Paid
+  - PayReviewMonth: PayReviewMonth
+  - IsThereADesignatedPension: IsThereADesignatedPension
+  - AutoEnrollmentPension: AutoEnrollmentPension
+  - OccupationalPension: OccupationalPension
+  - GroupPension: GroupPension
+  - PercentageEmployer: PercentageEmployer
+  - PercentageEmployee: PercentageEmployee
+  - PersonalPension: PersonalPension
+  - PersonalPercentageEmployer: PersonalPercentageEmployer
+  - PersonalPercentageEmployee: PersonalPercentageEmployee
+  - PayDeathInService: PayDeathInService
+  - CourseFeesPaid: CourseFeesPaid
+  - PayCourseFeesTerms: PayCourseFeesTerms
+  - NoApproachClients: NoApproachClients
+  - NoApproachClientsForHowLong: NoApproachClientsForHowLong
+  - NoApproachSuppliers: NoApproachSuppliers
+  - NoApproachSuppliersForHowLong: NoApproachSuppliersForHowLong
+  - NoApproachOtherEmployees: NoApproachOtherEmployees
+  - NoApproachOtherEmployeesForHowLong: NoApproachOtherEmployeesForHowLong
+  - NoWorkForCompetitors: NoWorkForCompetitors
+  - NoWorkForCompetitorsForHowLong: NoWorkForCompetitorsForHowLong
+
+---

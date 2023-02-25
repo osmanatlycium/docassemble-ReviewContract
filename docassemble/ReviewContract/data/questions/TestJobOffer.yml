@@ -1,0 +1,118 @@
+---
+mandatory: true
+code: |
+  multi_user = True
+
+---
+objects:
+  user: Individual
+---
+include:
+  - APIUserData.yml
+  - APICompanyData.yml
+  - APIRoleData.yml
+
+---
+modules:
+  - .hrp
+
+---
+metadata:
+  title: |
+    Job Offer Test 
+  short title: |
+    Job Offer
+  description: |
+    Job Offer Document
+  authors:
+    - name: Osman Ismail
+      organization: Lycium Property
+  revision_date: 19-11-2022
+
+---
+question: |
+  Assembling a document from a .docx
+  template
+subquestion: |
+  
+  This interview will fill fields in
+  a .docx template.  You can
+  [download the template] to see what
+  it looks like.
+
+  The letter will be sent by the
+  user to an adverse party to
+  complain about something.
+
+  [download the template]: ${ url_of('letter_template.docx') }
+field: introduction_shown
+---
+question: |
+  What is the task ID?
+field: taskId
+
+---
+question: |
+  What is the subject of your complaint?
+field: subject_matter
+choices:
+  - world peace
+  - overpriced coffee
+  - so many channels, nothing on
+  - youth unemployment
+---
+question: |
+  Please sign your name below.
+subquestion: |
+  Your signature will be added to the letter.
+signature: user.signature
+under: |
+  user_name
+
+
+---
+code: |
+  phone_number = "202-555-1234"
+  
+---
+mandatory: true
+code: |
+  introduction_shown
+---
+question: |
+  Here is your document.
+subquestion: |
+  Does it meet your approval?
+yesno: user_approves
+attachment:
+  name: Your letter
+  filename: letter
+  docx template file: letter_template.docx
+  valid formats:
+    - pdf
+    - docx
+---
+mandatory: True
+code: |
+  if user_approves:
+    success_screen
+  else:
+    fail_screen
+---
+event: success_screen
+question: |
+  Great!   ${ update_task({taskId}, 'complete') }
+buttons:
+  Exit: exit
+---
+event: fail_screen
+question: |
+  Sorry to hear that!
+buttons:
+  Exit: exit
+  Restart: restart
+  
+---
+
+
+  
