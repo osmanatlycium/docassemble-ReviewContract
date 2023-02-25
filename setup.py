@@ -46,7 +46,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.ReviewContract',
       version='0.0.4',
       description=('A docassemble extension.'),
-      long_description='# docassemble.TestJobOffer\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nosman ismail, osman@lycium.co.uk\r\n\r\n',
+      long_description='# docassemble.ReviewContract\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nosman ismail, osman@lycium.co.uk\r\n\r\n',
       long_description_content_type='text/markdown',
       author='osman ismail',
       author_email='osman@lycium.co.uk',
